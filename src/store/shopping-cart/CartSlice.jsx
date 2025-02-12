@@ -26,7 +26,7 @@ const cartslice = createSlice({
           title: " Added To Cart ",
           showConfirmButton: false,
           timer: 700,
-          
+
         });
       }
 
@@ -45,13 +45,13 @@ const cartslice = createSlice({
         foundedproduct.quantity == 1 ? null : foundedproduct.quantity -= 1;
       }
     },
-    removecart: (state, action) =>{
+    removecart: (state, action) => {
       const updatedCart = state.filter((product) => product.id !== action.payload.id);
       return updatedCart;
     },
   }
 })
 
-export const { addItem, morequantity, lessquantity , removecart } = cartslice.actions
+export const { addItem, morequantity, lessquantity, removecart } = cartslice.actions
 
 export default cartslice.reducer

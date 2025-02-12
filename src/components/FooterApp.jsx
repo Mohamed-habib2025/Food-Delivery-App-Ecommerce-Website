@@ -51,7 +51,7 @@ function FooterApp() {
                 <p>Subscribe our newsletter</p>
                 <div className="w-[200px] flex relative ">
                   <input className=' placeholder:text-sm focus:border-red-600 focus:ring-0 placeholder:text-black rounded bg-transparent border-black ' type="email" placeholder="Enter your email" />
-                  <span className='w-12 cursor-pointer h-7 rounded bg-red-600 absolute left-[165px] top-2 flex items-center justify-center '>
+                  <span className='w-12 cursor-pointer h-7 rounded bg-red-600 absolute left-[200px] top-2 flex items-center justify-center '>
                     <RiSendPlaneLine className='text-white' />
                   </span>
                 </div>

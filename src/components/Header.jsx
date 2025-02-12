@@ -71,7 +71,7 @@ function Header() {
           <span className=" text-[15px] font-bold">Tasty Treat</span>
         </div>
 
-        <div className=' w-[40%] hidden md:flex items-center justify-around'>
+        <div className=' w-[45%] hidden md:flex items-center justify-around'>
           <Link to="/home" className={` md:mx-0 mx-auto my-2 md:mt-0 hover:text-red-600 duration-300 text-lg ` + Linkness('home')}>
             Home
           </Link>
@@ -90,7 +90,7 @@ function Header() {
             </div>
             <AiOutlineUser className=' cursor-pointer text-[22px]' />
             {/* toggle */}
-            <div onClick={() => setopen(!open)} className=' block md:hidden z-[50] cursor-pointer'>
+            <div onClick={() => setopen(!open)} className=' block md:hidden z-[999] cursor-pointer'>
               <IoMenu className='text-2xl ' />
             </div>
           </div>
