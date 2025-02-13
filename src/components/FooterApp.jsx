@@ -9,7 +9,7 @@ import { RiSendPlaneLine } from "react-icons/ri";
 function FooterApp() {
   return (
     <div className=' w-full bg-[#FDE4E4]'>
-      <Footer container className=' w-[85%] m-auto bg-transparent rounded-none shadow-none'>
+      <Footer container className=' md:w-[85%] mx-auto bg-transparent rounded-none shadow-none'>
         <div>
           <div className="grid items-center justify-center sm:grid-cols-1 md:grid-cols-2 gap-8 sm:mt-4 lg:grid-cols-4 sm:gap-6">
             <Footer.LinkGroup className='text-gray' col>

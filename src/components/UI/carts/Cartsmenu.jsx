@@ -58,8 +58,8 @@ function Cartsmenu() {
                 <div>
                   <p className='text-xl'>Subtotal : <span className=' font-bold'>${totalPrice}</span></p>
                 </div>
-                <button className=' py-2 px-4 bg-white rounded-xl text-black font-semibold mr-4'>
-                  <Link>Checkout</Link>
+                <button className=' py-2 px-4 bg-white rounded-xl text-black font-semibold mr-4 hover:bg-red-200 duration-200'>
+                  <Link to="/checkout">Checkout</Link>
                 </button>
               </div>
 

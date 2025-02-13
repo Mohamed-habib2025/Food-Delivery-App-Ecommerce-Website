@@ -104,11 +104,11 @@ function Home() {
             </p>
 
             <div className=' w-[300px] flex items-center space-x-4'>
-              <button className=" h-10 w-32 py-1 px-3 rounded-lg bg-red-600 text-white hover:text-black duration-200 text-sm">
+              <button className=" h-9 w-28 rounded-lg bg-red-600 text-white hover:text-black duration-200 text-sm">
                 Order now
               </button>
 
-              <button className=" h-10 w-32 py-1 px-3 rounded-lg hover:bg-red-600 hover:text-white duration-200 text-sm border-[1px] border-red-600 ">
+              <button className=" h-9 w-28 rounded-lg hover:bg-red-600 hover:text-white duration-200 text-sm border-[1px] border-red-600 ">
                 <Link to="/foods">See all foods</Link>
               </button>
             </div>

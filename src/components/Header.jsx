@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { TiShoppingCart } from "react-icons/ti";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoMenu } from "react-icons/io5";
@@ -60,6 +60,8 @@ function Header() {
   }
   // end Active link 
 
+  const navigate = useNavigate()
+
 
   return (
     <div ref={headerRef} >
@@ -88,7 +90,7 @@ function Header() {
                 cart.length == 0 ? null : <span className=' absolute w-4 h-4 rounded-full bottom-[10px] left-[16px] bg-red-600 text-[11px] text-white flex justify-center '>{cart.length}</span>
               }
             </div>
-            <AiOutlineUser className=' cursor-pointer text-[22px]' />
+            <AiOutlineUser onClick={ () => navigate("/login")} className=' cursor-pointer text-[22px]' />
             {/* toggle */}
             <div onClick={() => setopen(!open)} className=' block md:hidden z-[999] cursor-pointer'>
               <IoMenu className='text-2xl ' />
