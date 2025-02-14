@@ -7,7 +7,7 @@ function Helmet(props) {
   document.title = " Food ordering app - " + props.title
 
   return (
-    <div className=' '>
+    <div >
       {props.children}
     </div>
   )

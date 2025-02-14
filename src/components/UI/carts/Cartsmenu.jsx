@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { IoIosCloseCircle } from "react-icons/io";
 import Cartitem from './Cartitem';
 import { Link } from 'react-router-dom';
-
-import { useState } from 'react'
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
@@ -27,7 +25,7 @@ function Cartsmenu() {
         className="fixed inset-0 bg-neutral-900/75 right-5 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
       />
       <div className=" fixed inset-y-0 right-0 flex max-w-full">
-        <motion.DialogPanel 
+        <motion.div
           initial={{ x: 300 }}
           whileInView={{ x: 0 }}
           transition={{
@@ -72,7 +70,7 @@ function Cartsmenu() {
             </div>
 
           </div>
-        </motion.DialogPanel>
+        </motion.div>
 
       </div>
 

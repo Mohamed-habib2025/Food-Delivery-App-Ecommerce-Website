@@ -8,7 +8,7 @@ function Login() {
     <Helmet title="Login">
       <Commensection title="Login"/>
       <div className='w-[85%] mx-auto my-10'>
-        <form className='bg-[#FDE4E4] rounded p-3 lg:w-[30%] mx-auto my-8'>
+        <form className='bg-[#FDE4E4] rounded p-3 lg:w-[35%] mx-auto my-8'>
           <div className=' mb-4 border-b-[1px] border-gray-300'>
             <input required type="text" placeholder='Email' className='py-2 border-none bg-transparent font-normal focus:ring-0 focus:outline-none' />
           </div>

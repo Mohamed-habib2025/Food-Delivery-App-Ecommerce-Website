@@ -318,7 +318,7 @@ function Home() {
             >
               <img className=' md:w-[500px] lg:w-[1200px]' src={whyimg} alt="" />
             </motion.div>
-            <motion.applydiv
+            <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
@@ -355,7 +355,7 @@ function Home() {
                 </div>
                 <p className='text-[13px] text-gray-400 font-thin'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
               </div>
-            </motion.applydiv>
+            </motion.div>
           </div>
         </div>
         {/* section7 */}
