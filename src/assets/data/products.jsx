@@ -33,7 +33,7 @@ const products = [
     image03: product_01_image_03,
     category: "Burger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
+    desc: "Delicious chicken burger made with fresh ingredients and a crispy bun. Perfect for any meal! ",
   },
 
   {
@@ -45,7 +45,7 @@ const products = [
     image03: product_02_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "A healthy and tasty vegetarian pizza loaded with fresh vegetables and cheese.",
   },
 
   {
@@ -57,7 +57,7 @@ const products = [
     image03: product_03_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Classic Margherita pizza with extra cheese for cheese lovers.",
   },
 
   {
@@ -69,7 +69,7 @@ const products = [
     image03: product_04_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Spicy Mexican-style pizza topped with jalapenos, bell peppers, and extra cheese.",
   },
 
   {
@@ -81,7 +81,7 @@ const products = [
     image03: product_05_image_03,
     category: "Burger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Juicy beef burger with melted cheese, fresh lettuce, and tomatoes.",
   },
   {
     id: "06",
@@ -92,7 +92,7 @@ const products = [
     image03: product_01_image_03,
     category: "Burger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "A mouth-watering pepperoni pizza with crispy crust and loaded cheese.",
   },
 
   {
@@ -104,7 +104,7 @@ const products = [
     image03: product_02_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Freshly baked classic French bread, perfect for sandwiches and breakfast.",
   },
 
   {
@@ -116,7 +116,7 @@ const products = [
     image03: product_03_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Delicious chocolate-covered donut with a soft and fluffy texture.",
   },
 
   {
@@ -128,7 +128,7 @@ const products = [
     image03: product_04_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Soft vanilla cupcake topped with creamy frosting and sprinkles.",
   },
 
   {
@@ -140,7 +140,7 @@ const products = [
     image03: product_05_image_03,
     category: "Burger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "Tasty grilled chicken wrap with fresh vegetables and a special sauce.",
   },
 
   {

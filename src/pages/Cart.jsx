@@ -1,14 +1,10 @@
 import React from 'react'
-
 import { FaTrash } from "react-icons/fa";
 import Commensection from '../components/UI/Commensection/Commensection'
 import Helmet from '../components/Helmet'
 import { useDispatch, useSelector } from 'react-redux'
 import { removecart } from '../store/shopping-cart/CartSlice';
 import { Link } from 'react-router-dom';
-
-
-
 
 function Cart() {
 

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 
 function Cartsmenu() {
 
@@ -19,16 +20,21 @@ function Cartsmenu() {
   const [open, setOpen] = useState(true)
 
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-[60] ">
 
+    <Dialog open={open} onClose={setOpen} className="relative z-[60] ">
       <DialogBackdrop
         transition
-        className="fixed inset-0 bg-neutral-900/75 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
+        className="fixed inset-0 bg-neutral-900/75 right-5 transition-opacity duration-500 ease-in-out data-closed:opacity-0"
       />
-
       <div className=" fixed inset-y-0 right-0 flex max-w-full">
-
-        <DialogPanel transition className=" w-[300px] md:w-[350px]">
+        <motion.DialogPanel 
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 50,
+          }}
+          className=" w-[300px] md:w-[350px]">
 
           <div className=" flex h-screen flex-col overflow-y-scroll bg-white shadow-xl rounded-lg">
 
@@ -59,14 +65,14 @@ function Cartsmenu() {
                   <p className='text-xl'>Subtotal : <span className=' font-bold'>${totalPrice}</span></p>
                 </div>
                 <button className=' py-2 px-4 bg-white rounded-xl text-black font-semibold mr-4 hover:bg-red-200 duration-200'>
-                  <Link to="/checkout">Checkout</Link>
+                  <Link to="/checkout" onClick={() => setOpen(false)}>Checkout</Link>
                 </button>
               </div>
 
             </div>
 
           </div>
-        </DialogPanel>
+        </motion.DialogPanel>
 
       </div>
 

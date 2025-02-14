@@ -26,22 +26,27 @@ import { CiCircleCheck } from "react-icons/ci";
 import networkimg from "../assets/Images/network.png"
 import TestimonailSlider from '../components/UI/TestimonailSlider'
 
+import { motion } from 'framer-motion'
+
 const featureData = [
   {
     title: "Quick Delivery",
     imgUrl: featureImg1,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    delay: 0.4,
   },
 
   {
     title: "Super Dine In",
     imgUrl: featureImg2,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    delay: 0.6,
   },
   {
     title: "Easy Pick Up",
     imgUrl: featureImg3,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    delay: 0.8,
   },
 ];
 
@@ -88,29 +93,74 @@ function Home() {
 
   return (
     <Helmet title="Home">
-      <div className=' w-[75%] md:w-[85%] mx-auto  '>
+      <div className=' w-[75%] md:w-[85%] mx-auto overflow-hidden'>
         {/* section1 */}
         <div className=' w-full grid grid-cols-1 lg:grid-cols-2 items-center justify-between '>
           {/* contant home page (left page)*/}
           <div className='mt-20 space-y-5 lg:mt-0'>
-            <h5 className="mb-3 font-serif text-2xl ">Easy way to make an order</h5>
-            <h1 className="mb-4 text-2xl md:text-5xl">
+            <motion.h5
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 10,
+                delay: 0.8,
+              }}
+              className="mb-3 font-serif text-2xl ">Easy way to make an order</motion.h5>
+            <motion.h1
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 20,
+                damping: 10,
+                delay: 0.5,
+              }}
+              className="mb-4 text-2xl md:text-5xl">
               <span className=' text-red-600 font-bold'>HUNGRY?</span> Just wait <br /> food at
               <span className=' text-red-600 font-bold'> your door</span>
-            </h1>
-            <p className='w-[90%] text-gray-500'>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 20,
+                damping: 10,
+                delay: 0.5,
+              }}
+              className='w-[90%] text-gray-500'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
               magni delectus tenetur autem, sint veritatis!
-            </p>
+            </motion.p>
 
             <div className=' w-[300px] flex items-center space-x-4'>
-              <button className=" h-9 w-28 rounded-lg bg-red-600 text-white hover:text-black duration-200 text-sm">
+              <motion.button
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.2,
+                }}
+                className=" h-9 w-28 rounded-lg bg-red-600 text-white hover:text-black duration-200 text-sm">
                 Order now
-              </button>
+              </motion.button>
 
-              <button className=" h-9 w-28 rounded-lg hover:bg-red-600 hover:text-white duration-200 text-sm border-[1px] border-red-600 ">
+              <motion.button
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.3,
+                }}
+                className=" h-9 w-28 rounded-lg hover:bg-red-600 hover:text-white duration-200 text-sm border-[1px] border-red-600 ">
                 <Link to="/foods">See all foods</Link>
-              </button>
+              </motion.button>
             </div>
             <div className=' flex items-center space-x-6'>
               <div className='mt-5 flex items-center space-x-3'>
@@ -124,9 +174,18 @@ function Home() {
             </div>
           </div>
           {/* image home page (right page)*/}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 50,
+              delay: 0.2,
+            }}
+          >
             <img src={heroimg} alt=" photo to home page" className='' />
-          </div>
+          </motion.div>
 
         </div>
         {/* section2 */}
@@ -134,19 +193,57 @@ function Home() {
         {/* section3 */}
         <div className=' py-10'>
           <div className=' flex flex-col items-center'>
-            <h5 className=" mb-3 text-red-600 font-semibold text-xl">What we serve</h5>
-            <h2 className=" text-2xl md:text-4xl">Just sit back at home</h2>
-            <h2 className="text-2xl md:text-4xl">
+            <motion.h5
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 10,
+                delay: 0.8,
+              }}
+              className=" mb-3 text-red-600 font-semibold text-xl">What we serve</motion.h5>
+            <motion.h2
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 10,
+                delay: 0.8,
+              }}
+              className=" text-2xl md:text-4xl">Just sit back at home</motion.h2>
+            <motion.h2
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 10,
+                delay: 0.8,
+              }}
+              className="text-2xl md:text-4xl">
               we will <span className='text-red-600'>take care</span>
-            </h2>
-            <p className="mb-1 mt-4  text-sm text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              officiis?
-            </p>
-            <p className=" text-sm text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aperiam, eius.
-            </p>
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 10,
+                delay: 0.8,
+              }}
+            >
+              <p className="mb-1 mt-4  text-sm text-gray-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                officiis?
+              </p>
+              <p className=" text-sm text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius.
+              </p>
+            </motion.div>
           </div>
         </div>
         {/* section4 */}
@@ -154,11 +251,20 @@ function Home() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
             {
               featureData.map((feature) => (
-                <div key={feature.title} className='flex flex-col items-center text-center gap-3'>
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 10,
+                    delay: feature.delay,
+                  }}
+                  key={feature.title} className='flex flex-col items-center text-center gap-3'>
                   <img src={feature.imgUrl} alt=" feature image" className='w-20' />
                   <h5 className='font-semibold text-xl'>{feature.title}</h5>
                   <p className='text-sm text-gray-500 md:w-[250px]'>{feature.desc}</p>
-                </div>
+                </motion.div>
               ))
             }
           </div>
@@ -187,7 +293,7 @@ function Home() {
 
             </div>
           </div>
-          <div className=' py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+          <div className=' py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
             {
               allproduct.map((product) => (
                 <div key={product.id} className='px-2 md:px-7 py-5 border border-red-200 flex flex-col items-center justify-center gap-4'>
@@ -200,10 +306,28 @@ function Home() {
         {/* section6 */}
         <div className='pb-10'>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5'>
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 50,
+                delay: 0.2,
+              }}
+            >
               <img className=' md:w-[500px] lg:w-[1200px]' src={whyimg} alt="" />
-            </div>
-            <div className='space-y-5'>
+            </motion.div>
+            <motion.applydiv
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 50,
+                delay: 0.2,
+              }}
+              className='space-y-5'>
               <h5 className='text-[#212245] font-semibold text-3xl'>Why <span className='text-red-600'>Tasty Treat?</span></h5>
               <p className=' text-[13px] lg:text-[15px] text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorum, minus. Tempora reprehenderit a corporis velit,
@@ -231,13 +355,13 @@ function Home() {
                 </div>
                 <p className='text-[13px] text-gray-400 font-thin'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
               </div>
-            </div>
+            </motion.applydiv>
           </div>
         </div>
         {/* section7 */}
         <div className=' py-7 text-center'>
           <h2 className='my-4'>Hot Pizza</h2>
-          <div className=' py-7 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+          <div className=' py-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
             {
               hotPizza.map((product) => (
                 <div key={product.id} className='px-2 md:px-7 py-5 border border-red-200 flex flex-col items-center justify-center gap-4'>
@@ -250,17 +374,35 @@ function Home() {
         {/* section8 */}
         <div className='py-7 w-[90%]'>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5'>
-            <div className='space-y-4'>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 50,
+                delay: 0.2,
+              }}
+              className='space-y-4'>
               <h5 className='text-red-600 text-xl'>Testimonial</h5>
               <h2 className='text-[#212245] font-semibold text-2xl md:text-4xl'>What our <span className='text-red-600'>customers</span> are saying</h2>
               <p className=' text-gray-400'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quasi qui minus quos sit perspiciatis inventore quis provident placeat fugiat!
               </p>
               <TestimonailSlider />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 50,
+                delay: 0.2,
+              }}
+            >
               <img className=' md:w-[500px] lg:w-[1200px]' src={networkimg} alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

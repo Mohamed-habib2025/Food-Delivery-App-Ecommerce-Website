@@ -3,7 +3,6 @@ import Helmet from '../components/Helmet'
 import Commensection from '../components/UI/Commensection/Commensection'
 import { useSelector } from 'react-redux'
 
-
 function Checkout() {
 
   const cart = useSelector(state => state.cart)
