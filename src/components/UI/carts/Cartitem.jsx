@@ -24,7 +24,7 @@ function Cartitem({ product }) {
         <p> x{quantity} <span className='ml-20'>${price * quantity}</span></p>
         <div className=' md:w-[150px] bg-red-200 py-1 rounded-lg flex justify-around'>
           <button onClick={() => dispath(morequantity(product))} className='text-xl'>+</button>
-          <span>1</span>
+          <span>{quantity}</span>
           <button onClick={() => dispath(lessquantity(product))} className='text-xl'>-</button>
         </div>
       </div>

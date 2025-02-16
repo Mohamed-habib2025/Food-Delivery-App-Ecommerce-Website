@@ -78,10 +78,10 @@ function Header() {
       }}
       ref={headerRef} >
       <Navbar className='w-[85%] mx-auto '>
-        <div className='flex flex-col items-center'>
+        <Link to="/" className='flex flex-col items-center'>
           <img src={logo} className=" w-10 font-serif" alt=" Logo" />
           <span className=" text-[15px] font-bold">Tasty Treat</span>
-        </div>
+        </Link>
         <div className=' w-[45%] hidden md:flex items-center justify-around'>
           <Link to="/home" className={` md:mx-0 mx-auto my-2 md:mt-0 hover:text-red-600 duration-300 text-lg ` + Linkness('home')}>
             Home
