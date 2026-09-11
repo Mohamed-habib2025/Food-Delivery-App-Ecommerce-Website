@@ -4,7 +4,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoMenu } from "react-icons/io5";
 import { Navbar } from "flowbite-react";
-import logo from "../assets/Images/res-logo.png"
+import logo from "../assets/img/res-logo.png"
 import { toggle } from '../store/shopping-cart/CartUISlice';
 import { motion } from 'framer-motion';
 import { IoMdClose } from "react-icons/io";

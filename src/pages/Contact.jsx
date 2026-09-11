@@ -1,6 +1,6 @@
 import React from 'react'
-import phone from "../assets/Images/phone.png"
-import email from "../assets/Images/email.png"
+import phone from "../assets/img/phone.png"
+import email from "../assets/img/email.png"
 import { motion } from 'framer-motion'
 
 

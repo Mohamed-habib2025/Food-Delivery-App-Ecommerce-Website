@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from "../assets/Images/res-logo.png"
+import logo from "../assets/img/res-logo.png"
 
 import { Footer } from "flowbite-react";
 import { FaFacebookF , FaInstagram , FaGithub  , FaXTwitter  } from "react-icons/fa6";

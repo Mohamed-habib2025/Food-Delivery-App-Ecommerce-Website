@@ -1,9 +1,9 @@
 import React from 'react'
 
-import categoryimg1 from "../../assets/Images/category-01.png"
-import categoryimg2 from "../../assets/Images/category-02.png"
-import categoryimg3 from "../../assets/Images/category-03.png"
-import categoryimg4 from "../../assets/Images/category-04.png"
+import categoryimg1 from "../../assets/img/category-01.png"
+import categoryimg2 from "../../assets/img/category-02.png"
+import categoryimg3 from "../../assets/img/category-03.png"
+import categoryimg4 from "../../assets/img/category-04.png"
 import { motion } from 'framer-motion'
 
 const categoryData = [

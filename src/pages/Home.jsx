@@ -3,27 +3,27 @@ import React, { useEffect, useState } from 'react'
 import "../index.css"
 
 import Helmet from "../components/Helmet"
-import heroimg from "../assets/Images/hero.png"
+import heroimg from "../assets/img/hero.png"
 import Category from '../components/UI/Category'
 import { Link } from 'react-router-dom'
 import { FaCarAlt } from "react-icons/fa";
 import { RiShieldCheckLine } from "react-icons/ri";
 
-import featureImg1 from "../assets/Images/service-01.png"
-import featureImg2 from "../assets/Images/service-02.png"
-import featureImg3 from "../assets/Images/service-03.png"
+import featureImg1 from "../assets/img/service-01.png"
+import featureImg2 from "../assets/img/service-02.png"
+import featureImg3 from "../assets/img/service-03.png"
 
 import products from "../assets/data/products"
-import foodcategoryimg1 from "../assets/Images/hamburger.png"
-import foodcategoryimg2 from "../assets/Images/pizza.png"
-import foodcategoryimg3 from "../assets/Images/bread.png"
+import foodcategoryimg1 from "../assets/img/hamburger.png"
+import foodcategoryimg2 from "../assets/img/pizza.png"
+import foodcategoryimg3 from "../assets/img/bread.png"
 
 import Productcart from "../components/UI/Productcart"
 
-import whyimg from "../assets/Images/location.png"
+import whyimg from "../assets/img/location.png"
 import { CiCircleCheck } from "react-icons/ci";
 
-import networkimg from "../assets/Images/network.png"
+import networkimg from "../assets/img/network.png"
 import TestimonailSlider from '../components/UI/TestimonailSlider'
 
 import { motion } from 'framer-motion'
