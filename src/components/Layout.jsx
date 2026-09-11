@@ -3,7 +3,7 @@ import React from 'react'
 import Header from './Header'
 import Routes from '../routes/routers'
 import FooterApp from './FooterApp'
-import Cartsmenu from './UI/carts/cartsmenu'
+import Cartsmenu from './UI/carts/Cartsmenu'
 import { useSelector } from 'react-redux'
 
 function Layout() {

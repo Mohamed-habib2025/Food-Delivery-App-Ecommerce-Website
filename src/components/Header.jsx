@@ -63,7 +63,7 @@ function Header() {
   }
   // end Active link 
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
 
   return (

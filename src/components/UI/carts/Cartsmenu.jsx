@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoIosCloseCircle } from "react-icons/io";
 import Cartitem from './Cartitem';
 import { Link } from 'react-router-dom';
-import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
+import { Dialog, DialogBackdrop } from '@headlessui/react'
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
